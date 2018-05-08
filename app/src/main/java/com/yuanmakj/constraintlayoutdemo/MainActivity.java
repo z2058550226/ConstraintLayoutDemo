@@ -52,4 +52,8 @@ public class MainActivity extends AppCompatActivity {
     public void barrier(View view) {
         BarrierDemoActivity.start(this);
     }
+
+    public void placeholder(View view) {
+        PlaceholderActivity.start(this);
+    }
 }
