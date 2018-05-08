@@ -40,7 +40,7 @@ public class PlaceholderActivity extends AppCompatActivity {
         mTv1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(PlaceholderActivity.this,"tv1",Toast.LENGTH_LONG).show();
+                Toast.makeText(PlaceholderActivity.this, "tv1", Toast.LENGTH_LONG).show();
             }
         });
         mPlaceholder.setEmptyVisibility(View.VISIBLE);
@@ -58,8 +58,10 @@ public class PlaceholderActivity extends AppCompatActivity {
         TransitionManager.beginDelayedTransition(mConstraintLayout);
         if (isPh1 = !isPh1) {
             mPlaceholder.setContentId(R.id.tv1);
+            mPh2.setContentId(-1);
         } else {
             mPh2.setContentId(R.id.tv1);
+            mPlaceholder.setContentId(-1);
         }
     }
 }
